@@ -23,7 +23,7 @@ public class EParichay_Emulator {
 	public void Test() {
 		try {
 			
-			//Open Appium server...
+			//Open Appium server..
 			//service= new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\rajya\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).withTimeout(Duration.ofSeconds(300)).build();
 			
 			//service.start();
