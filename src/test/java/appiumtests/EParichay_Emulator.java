@@ -7,17 +7,14 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-import org.testng.annotations.Test;
-
-
-public class OpenCalculator {
-
+public class EParichay_Emulator {
 	static URL url;
 	static AppiumDriver driver;
 	AppiumDriverLocalService service;
@@ -26,13 +23,13 @@ public class OpenCalculator {
 	public void Test() {
 		try {
 			
-			//Open Appium server..
-			service= new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\rajya\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).withTimeout(Duration.ofSeconds(300)).build();
+			//Open Appium server...
+			//service= new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\rajya\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).withTimeout(Duration.ofSeconds(300)).build();
 			
-			service.start();
+			//service.start();
 			
 			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability("deviceName", "OnePlus 9 5G");
+			cap.setCapability("deviceName", "emulator-5554");
 			cap.setCapability("udid", "192.168.29.179:5555");
 			cap.setCapability(CapabilityType.PLATFORM_NAME, "Android");
 			cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
@@ -61,12 +58,11 @@ public class OpenCalculator {
 			System.out.println("Hi:" + text1);
 			Thread.sleep(3000);
 			//driver.close();
-			service.stop();
+			//service.stop();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("Exception");
 			e.printStackTrace();
 		}
 	}
-
 }

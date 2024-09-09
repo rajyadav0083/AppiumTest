@@ -1,12 +1,17 @@
 package appiumtests;
 
+import java.lang.StackWalker.Option;
 import java.net.URL;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
-
+import io.appium.java_client.remote.MobileBrowserType;
+import io.appium.java_client.remote.MobilePlatform;
+import io.appium.java_client.remote.options.CanSetCapability;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.remote.*;
 
 
 
@@ -21,7 +26,7 @@ public class opencalculator_redmiDevice {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("deviceName", "Redmi Note 7S");
 		cap.setCapability("udid", "df8f95d");
-		cap.setCapability("platformName", "Android");
+		cap.setCapability(CapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability("platformVersion", "29");
 		cap.setCapability("automationName", "UiAutomator2");
 		cap.setCapability("ignoreHiddenApiPolicyError", true);
