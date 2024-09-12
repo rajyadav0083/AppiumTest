@@ -8,7 +8,7 @@
 		<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
-	    <version>4.17.0</version>
+	    <version>4.24.0</version>
 	    </dependency>
 	    <!-- Extent Report dependency -->
 		<dependency>
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>8.0.0</version>
+			<version>9.3.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->

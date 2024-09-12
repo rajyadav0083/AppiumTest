@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
+//import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
@@ -32,8 +32,8 @@ public class EParichay_Emulator {
 			cap.setCapability("deviceName", "emulator-5554");
 			cap.setCapability("udid", "192.168.29.179:5555");
 			cap.setCapability(CapabilityType.PLATFORM_NAME, "Android");
-			cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+			//cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
+			//cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 			//cap.setCapability("ignoreHiddenApiPolicyError", true);
 			cap.setCapability("appPackage", "com.oneplus.calculator");
 			cap.setCapability("appActivity", "com.android.calculator2.Calculator");
